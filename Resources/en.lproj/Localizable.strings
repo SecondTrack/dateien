@@ -1,0 +1,55 @@
+// Dateien — English
+
+
+// Hauptschirm – aus
+"Files" = "Files";
+"Look at the photos, music and files on this iPod from your phone or computer – no cable, just in the browser." = "Look at the photos, music and files on this iPod from your phone or computer – no cable, just in the browser.";
+"Start sharing" = "Start sharing";
+"Phone or computer must be on the same Wi-Fi as this iPod." = "Phone or computer must be on the same Wi-Fi as this iPod.";
+"The iPod is not connected to Wi-Fi. Connect it under Settings › Wi-Fi." = "The iPod is not connected to Wi-Fi. Connect it under Settings › Wi-Fi.";
+"Sharing could not be started" = "Sharing could not be started";
+
+// Hauptschirm – an
+"Sharing is on" = "Sharing is on";
+"Extras" = "Extras";
+"Scan the code with your phone camera" = "Scan the code with your phone camera";
+"Enter this number" = "Enter this number";
+"On a computer? Type into the browser:" = "On a computer? Type into the browser:";
+"or %@" = "or %@";
+"Stop sharing" = "Stop sharing";
+"No device connected yet" = "No device connected yet";
+"1 device connected ✓" = "1 device connected ✓";
+"%lu devices connected ✓" = "%lu devices connected ✓";
+"Command line in use" = "Command line in use";
+"Command line is allowed" = "Command line is allowed";
+
+// Extras – Kommandozeile
+"Command line" = "Command line";
+"Done" = "Done";
+"For experts: run commands on the iPod from the browser. It runs with limited rights (user “mobile”, not root) and switches itself off after 10 minutes without input." = "For experts: run commands on the iPod from the browser. It runs with limited rights (user “mobile”, not root) and switches itself off after 10 minutes without input.";
+"Allow command line" = "Allow command line";
+"Password" = "Password";
+"Enter it in the browser under “Command line”. A new password is made every time you switch it on." = "Enter it in the browser under “Command line”. A new password is made every time you switch it on.";
+"In use right now" = "In use right now";
+"Start sharing first." = "Start sharing first.";
+
+// Server
+"Folder not found" = "Folder not found";
+"Cannot open network socket" = "Cannot open network socket";
+"Port %d is in use" = "Port %d is in use";
+"Cannot start server thread" = "Cannot start server thread";
+"Login from %@" = "Login from %@";
+"Wrong PIN from %@" = "Wrong PIN from %@";
+"Login locked for %d s" = "Login locked for %d s";
+"%@ → Camera Roll" = "%@ → Camera Roll";
+"Wrong command line password from %@" = "Wrong command line password from %@";
+"Command line opened from %@" = "Command line opened from %@";
+
+// Apps
+"Install app?" = "Install app?";
+"Install" = "Install";
+"Delete app?" = "Delete app?";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+"Requested from %@" = "Requested from %@";
+"Install %@?" = "Install %@?";

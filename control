@@ -1,0 +1,9 @@
+Package: de.mesh.files
+Name: Dateien
+Version: 1.2.0
+Architecture: iphoneos-arm
+Description: Dateien des iPods im WLAN per Browser verwalten (PIN-geschützt)
+Maintainer: Second Track
+Author: Second Track
+Section: Utilities
+Depends: firmware (>= 6.0)

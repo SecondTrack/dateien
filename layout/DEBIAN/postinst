@@ -1,0 +1,5 @@
+#!/bin/sh
+# fmpkg braucht root (setuid), nimmt aber nur Befehle der App „Dateien“ an (siehe tool/fmpkg.c)
+chown root:wheel /Applications/Dateien.app/fmpkg
+chmod 4755 /Applications/Dateien.app/fmpkg
+exit 0

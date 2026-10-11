@@ -1,0 +1,16 @@
+{
+  "id": "dateien",
+  "name": "Dateien",
+  "short": "Fotos & Musik per WLAN rüberziehen",
+  "category": "Werkzeuge",
+  "status": "da",
+  "ios": [
+    "6.1.6"
+  ],
+  "package": "de.mesh.files",
+  "version": "1.2.0",
+  "repo": "SecondTrack/dateien",
+  "requires": "",
+  "license": "GPL-3.0",
+  "install": "GitHub-Release: neuestes Release, Anhang *.deb"
+}

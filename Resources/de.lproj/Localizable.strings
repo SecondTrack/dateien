@@ -1,0 +1,55 @@
+// Dateien — Deutsch
+
+
+// Hauptschirm – aus
+"Files" = "Dateien";
+"Look at the photos, music and files on this iPod from your phone or computer – no cable, just in the browser." = "Sieh dir Fotos, Musik und Dateien dieses iPods auf dem Handy oder Computer an – ohne Kabel, einfach im Browser.";
+"Start sharing" = "Freigabe starten";
+"Phone or computer must be on the same Wi-Fi as this iPod." = "Handy oder Computer müssen im selben WLAN sein wie dieser iPod.";
+"The iPod is not connected to Wi-Fi. Connect it under Settings › Wi-Fi." = "Der iPod ist mit keinem WLAN verbunden. Verbinde ihn unter Einstellungen › WLAN.";
+"Sharing could not be started" = "Die Freigabe konnte nicht gestartet werden";
+
+// Hauptschirm – an
+"Sharing is on" = "Freigabe ist aktiv";
+"Extras" = "Extras";
+"Scan the code with your phone camera" = "Code mit der Handy-Kamera scannen";
+"Enter this number" = "Diese Zahl eingeben";
+"On a computer? Type into the browser:" = "Am PC? Im Browser eingeben:";
+"or %@" = "oder %@";
+"Stop sharing" = "Freigabe beenden";
+"No device connected yet" = "Noch kein Gerät verbunden";
+"1 device connected ✓" = "1 Gerät verbunden ✓";
+"%lu devices connected ✓" = "%lu Geräte verbunden ✓";
+"Command line in use" = "Kommandozeile wird gerade benutzt";
+"Command line is allowed" = "Kommandozeile ist erlaubt";
+
+// Extras – Kommandozeile
+"Command line" = "Kommandozeile";
+"Done" = "Fertig";
+"For experts: run commands on the iPod from the browser. It runs with limited rights (user “mobile”, not root) and switches itself off after 10 minutes without input." = "Für Profis: Befehle auf dem iPod über den Browser ausführen. Läuft mit eingeschränkten Rechten (Benutzer „mobile“, nicht root) und schaltet sich nach 10 Minuten ohne Eingabe selbst ab.";
+"Allow command line" = "Kommandozeile erlauben";
+"Password" = "Passwort";
+"Enter it in the browser under “Command line”. A new password is made every time you switch it on." = "Im Browser unter „Kommandozeile“ eingeben. Bei jedem Einschalten gibt es ein neues Passwort.";
+"In use right now" = "Wird gerade benutzt";
+"Start sharing first." = "Zuerst die Freigabe starten.";
+
+// Server
+"Folder not found" = "Ordner nicht gefunden";
+"Cannot open network socket" = "Netzwerk-Socket lässt sich nicht öffnen";
+"Port %d is in use" = "Port %d ist belegt";
+"Cannot start server thread" = "Server-Thread lässt sich nicht starten";
+"Login from %@" = "Anmeldung von %@";
+"Wrong PIN from %@" = "Falsche PIN von %@";
+"Login locked for %d s" = "Anmeldung für %d s gesperrt";
+"%@ → Camera Roll" = "%@ → Aufnahmen";
+"Wrong command line password from %@" = "Falsches Kommandozeilen-Passwort von %@";
+"Command line opened from %@" = "Kommandozeile geöffnet von %@";
+
+// Apps
+"Install app?" = "App installieren?";
+"Install" = "Installieren";
+"Delete app?" = "App löschen?";
+"Delete" = "Löschen";
+"Cancel" = "Abbrechen";
+"Requested from %@" = "Angefragt von %@";
+"Install %@?" = "%@ installieren?";
