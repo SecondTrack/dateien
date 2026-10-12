@@ -4,10 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key><string>en</string>
 	<key>CFBundleLocalizations</key><array><string>en</string><string>de</string></array>
-	<key>CFBundleDisplayName</key><string>Beam</string>
+	<key>CFBundleDisplayName</key><string>FileTransfer</string>
 	<key>CFBundleExecutable</key><string>Dateien</string>
 	<key>CFBundleIdentifier</key><string>de.mesh.files</string>
-	<key>CFBundleName</key><string>Beam</string>
+	<key>CFBundleName</key><string>FileTransfer</string>
 	<key>CFBundlePackageType</key><string>APPL</string>
 	<key>CFBundleShortVersionString</key><string>1.2.0</string>
 	<key>CFBundleVersion</key><string>1.2.0</string>

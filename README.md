@@ -1,4 +1,4 @@
-# Beam
+# FileTransfer
 
 **Your iPod as a Wi-Fi drive: browse, upload and download from any browser – no cable, no iTunes.**
 
