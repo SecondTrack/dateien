@@ -1,39 +1,39 @@
-# Dateien
+# Files
 
-**Fotos & Musik per WLAN rüberziehen**
+**Move photos & music over Wi-Fi**
 
-Sieh dir Fotos, Musik und Dateien des iPods auf Handy oder Computer an – ohne Kabel, einfach im Browser. QR-Code scannen, fertig.
+View your iPod's photos, music and files on your phone or computer – no cable, right in the browser. Scan the QR code and you're done.
 
-## Das kann die App
+## Features
 
-- Fotos, Musik und Dateien im Browser ansehen
-- Verbindung per QR-Code und PIN
-- Hoch- und runterladen ohne Kabel
-- Nur im eigenen WLAN erreichbar
+- Browse photos, music and files in the browser
+- Connect via QR code and PIN
+- Upload and download without a cable
+- Only reachable on your own Wi-Fi
 
-## Läuft auf
+## Runs on
 
-iOS 6.1.6 · gejailbreakter iPod touch
+iOS 6.1.6 · jailbroken iPod touch
 
-## Installieren
+## Install
 
-Am einfachsten über den **[Reboot Appstore](https://github.com/SecondTrack/reboot)** direkt auf dem iPod.
-Von Hand: das `.deb` aus dem [neuesten Release](https://github.com/SecondTrack/dateien/releases/latest) laden und mit `dpkg -i` installieren, danach `uicache`.
+The easiest way is the **[Reboot App Store](https://github.com/SecondTrack/reboot)** right on the iPod.
+By hand: download the `.deb` from the [latest release](https://github.com/SecondTrack/dateien/releases/latest), install it with `dpkg -i`, then run `uicache`.
 
-## Selbst bauen
+## Build it yourself
 
-Mit [Theos](https://theos.dev) (iOS-SDK mit armv7):
+With [Theos](https://theos.dev) (iOS SDK with armv7):
 
 ```sh
 make package
 ```
 
-## Teil von Reboot
+## Part of Reboot
 
-Diese App gehört zu **Reboot** von [Second Track](https://secondtrack.de) – neue Apps für alte iPods.
-Alle Apps: [SecondTrack](https://github.com/SecondTrack).
+This app is part of **Reboot** by **Second Track** – new apps for old iPods.
+All apps: [SecondTrack](https://github.com/SecondTrack).
 
-## Lizenz
+## License
 
-GPL-3.0 – siehe [LICENSE](LICENSE). Mitgelieferte Bibliotheken unter `vendor/` behalten ihre eigenen Lizenzen.
-Nicht mit Apple verbunden. iPod ist eine Marke von Apple Inc.
+GPL-3.0 – see [LICENSE](LICENSE). Bundled libraries under `vendor/` keep their own licenses.
+Not affiliated with Apple. iPod is a trademark of Apple Inc.

@@ -1,8 +1,8 @@
 {
   "id": "dateien",
-  "name": "Dateien",
-  "short": "Fotos & Musik per WLAN rüberziehen",
-  "category": "Werkzeuge",
+  "name": "Files",
+  "short": "Move photos & music over Wi-Fi",
+  "category": "Tools",
   "status": "da",
   "ios": [
     "6.1.6"
@@ -12,5 +12,25 @@
   "repo": "SecondTrack/dateien",
   "requires": "",
   "license": "GPL-3.0",
-  "install": "GitHub-Release: neuestes Release, Anhang *.deb"
+  "install": "GitHub release: latest release, *.deb asset",
+  "bundle": "de.mesh.files",
+  "text": "View your iPod's photos, music and files on your phone or computer – no cable, right in the browser. Scan the QR code and you're done.",
+  "features": [
+    "Browse photos, music and files in the browser",
+    "Connect via QR code and PIN",
+    "Upload and download without a cable",
+    "Only reachable on your own Wi-Fi"
+  ],
+  "icon": "https://raw.githubusercontent.com/SecondTrack/dateien/main/Resources/Icon@2x.png",
+  "private": false,
+  "name_de": "Dateien",
+  "short_de": "Fotos & Musik per WLAN rüberziehen",
+  "category_de": "Werkzeuge",
+  "text_de": "Sieh dir Fotos, Musik und Dateien des iPods auf Handy oder Computer an – ohne Kabel, einfach im Browser. QR-Code scannen, fertig.",
+  "features_de": [
+    "Fotos, Musik und Dateien im Browser ansehen",
+    "Verbindung per QR-Code und PIN",
+    "Hoch- und runterladen ohne Kabel",
+    "Nur im eigenen WLAN erreichbar"
+  ]
 }
