@@ -1,6 +1,6 @@
 {
   "id": "dateien",
-  "name": "Files",
+  "name": "Beam",
   "short": "Move photos & music over Wi-Fi",
   "category": "Tools",
   "status": "da",
@@ -8,7 +8,7 @@
     "6.1.6"
   ],
   "package": "de.mesh.files",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "repo": "SecondTrack/dateien",
   "requires": "",
   "license": "GPL-3.0",
@@ -23,7 +23,7 @@
   ],
   "icon": "https://raw.githubusercontent.com/SecondTrack/dateien/main/Resources/Icon@2x.png",
   "private": false,
-  "name_de": "Dateien",
+  "name_de": "Beam",
   "short_de": "Fotos & Musik per WLAN rüberziehen",
   "category_de": "Werkzeuge",
   "text_de": "Sieh dir Fotos, Musik und Dateien des iPods auf Handy oder Computer an – ohne Kabel, einfach im Browser. QR-Code scannen, fertig.",
