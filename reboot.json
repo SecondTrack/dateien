@@ -1,5 +1,5 @@
 {
-  "id": "dateien",
+  "id": "filetransfer",
   "name": "FileTransfer",
   "short": "Move photos & music over Wi-Fi",
   "category": "Tools",
@@ -9,7 +9,7 @@
   ],
   "package": "de.mesh.files",
   "version": "1.2.3",
-  "repo": "SecondTrack/dateien",
+  "repo": "SecondTrack/filetransfer",
   "requires": "",
   "license": "GPL-3.0",
   "install": "GitHub release: latest release, *.deb asset",
