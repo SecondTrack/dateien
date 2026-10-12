@@ -82,6 +82,12 @@ static UIImage *qrImage(NSString *text) {
 - (void)refresh;
 @end
 
+// Schrift darf schrumpfen: ab iOS 6 als Faktor, unter iOS 5 als kleinste Punktgröße
+static void FMMinScale(UILabel *l, CGFloat f) {
+    if ([l respondsToSelector:@selector(setMinimumScaleFactor:)]) l.minimumScaleFactor = f;
+    else { _Pragma("clang diagnostic push") _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") l.minimumFontSize = l.font.pointSize * f; _Pragma("clang diagnostic pop") }
+}
+
 @implementation FMShellController {
     FMServer *_server;
     UISwitch *_switch;
@@ -134,7 +140,7 @@ static UIImage *qrImage(NSString *text) {
     ph.text = L(@"Password");
     [_passCard addSubview:ph];
     _pass = label(CGRectMake(8, 34, W - 48, 34), [UIFont fontWithName:@"Courier-Bold" size:30], INK, NSTextAlignmentCenter);
-    _pass.adjustsFontSizeToFitWidth = YES; _pass.minimumScaleFactor = 0.6;
+    _pass.adjustsFontSizeToFitWidth = YES; FMMinScale(_pass, 0.6);
     [_passCard addSubview:_pass];
     UILabel *pn = label(CGRectMake(14, 72, W - 60, 0), [UIFont systemFontOfSize:13], MUT, NSTextAlignmentLeft);
     fitLabel(pn, L(@"Enter it in the browser under “Command line”. A new password is made every time you switch it on."));
@@ -299,7 +305,7 @@ static UIImage *qrImage(NSString *text) {
     [c1 addSubview:badge(CGPointMake(12, 12), @"1")];
     UILabel *s1 = label(CGRectMake(44, 12, W - 32 - 52, 24), [UIFont boldSystemFontOfSize:15], INK, NSTextAlignmentLeft);
     s1.text = L(@"Scan the code with your phone camera");
-    s1.adjustsFontSizeToFitWidth = YES; s1.minimumScaleFactor = 0.8;
+    s1.adjustsFontSizeToFitWidth = YES; FMMinScale(s1, 0.8);
     [c1 addSubview:s1];
     _qr = [[UIImageView alloc] initWithFrame:CGRectMake((W - 32 - 132) / 2, 42, 132, 132)];
     _qr.layer.magnificationFilter = kCAFilterNearest;
@@ -321,7 +327,7 @@ static UIImage *qrImage(NSString *text) {
     ah.text = L(@"On a computer? Type into the browser:");
     [_addrBox addSubview:ah];
     _host = label(CGRectMake(8, 24, W - 48, 24), [UIFont boldSystemFontOfSize:20], ACC, NSTextAlignmentCenter);
-    _host.adjustsFontSizeToFitWidth = YES; _host.minimumScaleFactor = 0.6;
+    _host.adjustsFontSizeToFitWidth = YES; FMMinScale(_host, 0.6);
     [_addrBox addSubview:_host];
     _ip = label(CGRectMake(8, 48, W - 48, 14), [UIFont systemFontOfSize:12], MUT, NSTextAlignmentCenter);
     [_addrBox addSubview:_ip];
@@ -438,9 +444,15 @@ static UIImage *qrImage(NSString *text) {
         // Im QR steht die IP: Android-Handys lösen .local-Namen oft nicht auf.
         NSString *qrText = [NSString stringWithFormat:@"%@/#pin=%@", addr, _server.pin];
         if (![qrText isEqualToString:_shownQR]) { _shownQR = qrText; _qr.image = qrImage(qrText); }
-        NSMutableAttributedString *p = [[NSMutableAttributedString alloc] initWithString:_server.pin ?: @""];
-        [p addAttribute:NSKernAttributeName value:@12 range:NSMakeRange(0, p.length)];
-        _pin.attributedText = p;
+        if ([_pin respondsToSelector:@selector(setAttributedText:)] && &NSKernAttributeName != NULL) {
+            NSMutableAttributedString *p = [[NSMutableAttributedString alloc] initWithString:_server.pin ?: @""];
+            [p addAttribute:NSKernAttributeName value:@12 range:NSMakeRange(0, p.length)];
+            _pin.attributedText = p;
+        } else {   // iOS 5: Abstand mit Leerzeichen
+            NSMutableString *t = [NSMutableString string];
+            for (NSUInteger i = 0; i < _server.pin.length; i++) { if (i) [t appendString:@" "]; [t appendString:[_server.pin substringWithRange:NSMakeRange(i, 1)]]; }
+            _pin.text = t;
+        }
         NSString *bonjour = [FMServer bonjourName];
         _host.text = [addr substringFromIndex:7];         // IP groß: klappt in jedem Browser
         _ip.text = bonjour ? LF(@"or %@", [NSString stringWithFormat:@"%@:%d", bonjour, _server.port]) : @"";

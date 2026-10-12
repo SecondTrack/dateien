@@ -29,7 +29,7 @@ A hand-written HTTP/1.1 server on BSD sockets (port 8080), the web interface com
 
 ## Runs on
 
-iOS 6.1.6 · jailbroken iPod touch 4 · any browser on the same Wi-Fi
+iOS 5.0 to 6.1 · jailbroken iPod touch 3G and 4G (iOS 5 not yet tested on a device) · any browser on the same Wi-Fi
 
 ## Install
 

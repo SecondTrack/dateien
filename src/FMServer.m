@@ -131,7 +131,11 @@ static BOOL isProtected(NSString *p) {
 }
 
 static NSString *sizeText(long long n) {
-    return [NSByteCountFormatter stringFromByteCount:n countStyle:NSByteCountFormatterCountStyleFile];
+    Class f = NSClassFromString(@"NSByteCountFormatter");   // erst ab iOS 6
+    if (f) return [f stringFromByteCount:n countStyle:NSByteCountFormatterCountStyleFile];
+    double v = n; NSArray *u = @[@"Bytes", @"KB", @"MB", @"GB", @"TB"]; NSUInteger i = 0;
+    while (v >= 1000 && i + 1 < u.count) { v /= 1000; i++; }
+    return i ? [NSString stringWithFormat:@"%.1f %@", v, u[i]] : [NSString stringWithFormat:@"%lld %@", n, u[0]];
 }
 
 static void *runBlock(void *arg) {
