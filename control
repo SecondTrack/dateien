@@ -1,0 +1,9 @@
+Package: de.mesh.files
+Name: FileTransfer
+Version: 1.2.4
+Architecture: iphoneos-arm
+Description: Dateien des iPods im WLAN per Browser verwalten (PIN-geschützt)
+Maintainer: Second Track
+Author: Second Track
+Section: Utilities
+Depends: firmware (>= 5.0)
